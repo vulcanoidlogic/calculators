@@ -1,0 +1,181 @@
+body {
+  font-size: 62.5%;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.inner-field {
+  margin-right: 24px;
+}
+
+.flex-row {
+  display: flex;
+  justify-content: center;
+}
+
+input[type='number'] {
+  line-height: 27px;
+}
+
+input[type='number']::-webkit-inner-spin-button {
+  width: 30px;
+  height: 30px;
+}
+
+.centered-page {
+  text-align: center;
+}
+
+/* Growth Chart Styles */
+#growth-chart {
+  background-color: #ffffff;
+}
+
+text.percentile {
+  fill: rgba(0, 0, 0, 0.6);
+  font-weight: bold;
+  font-size: 2em;
+}
+
+path.line-path {
+  stroke-width: 2.5;
+  stroke-linecap: round;
+}
+
+/* legend and line-path colors*/
+/*orange*/
+.line-path-legend rect:nth-of-type(1) {
+  fill: #f47d44;
+}
+
+/*yellow*/
+.line-path-legend rect:nth-of-type(2) {
+  fill: #ffd600;
+}
+
+/*beige*/
+.line-path-legend rect:nth-of-type(3) {
+  fill: #ceb48d;
+}
+
+/*gray*/
+.line-path-legend rect:nth-of-type(4) {
+  fill: #aab1b0;
+}
+
+/*green*/
+.line-path-legend rect:nth-of-type(5) {
+  fill: #9eccb3;
+}
+
+/*blue*/
+.line-path-legend rect:nth-of-type(6) {
+  fill: #83b5dd;
+}
+
+/*purple*/
+.line-path-legend rect:nth-of-type(7) {
+  fill: #9b90c8;
+}
+
+/*orange*/
+path.line-path:nth-of-type(7) {
+  stroke: #f47d44;
+}
+
+/*yellow*/
+path.line-path:nth-of-type(6) {
+  stroke: #ffd600;
+}
+
+/*beige*/
+path.line-path:nth-of-type(5) {
+  stroke: #ceb48d;
+}
+
+/*gray*/
+path.line-path:nth-of-type(4) {
+  stroke: #aab1b0;
+}
+
+/*green*/
+path.line-path:nth-of-type(3) {
+  stroke: #9eccb3;
+}
+
+/*blue*/
+path.line-path:nth-of-type(2) {
+  stroke: #83b5dd;
+}
+
+/*purple*/
+path.line-path:nth-of-type(1) {
+  stroke: #9b90c8;
+}
+
+.line-path-legend text {
+  fill: rgba(0, 0, 0, 0.6);
+  font-size: 1.25em;
+  font-weight: bold;
+}
+
+text.axis-label {
+  fill: rgba(0, 0, 0, 0.6);
+  font-size: 1.75em;
+  font-weight: bold;
+}
+
+.tick text {
+  fill: rgba(0, 0, 0, 0.6);
+  font-size: 1.4em;
+}
+
+/* iPhone 5 & 5S in portrait */
+@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (orientation: portrait) {
+  text.percentile {
+    font-size: 1.25em;
+  }
+
+  text.axis-label {
+    font-size: 1.25em;
+  }
+
+  .tick text {
+    font-size: 0.85em;
+    font-weight: bold;
+  }
+}
+
+/* iPhone 6 Plus in portrait */
+@media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (orientation: portrait) {
+  text.percentile {
+    font-size: 1.5em;
+  }
+
+  text.axis-label {
+    font-size: 1.5em;
+  }
+
+  .tick text {
+    font-size: 1.25em;
+    font-weight: bold;
+  }
+}
+
+.tick line,
+path.domain {
+  stroke: rgba(0, 0, 0, 0.15);
+}
+
+.x-tick .tick line {
+  stroke: rgba(0, 0, 0, 0);
+}
+
+.add-point-form-fab {
+  position: absolute;
+  bottom: 4px;
+  right: 4px;
+}

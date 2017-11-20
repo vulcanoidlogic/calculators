@@ -1,0 +1,13 @@
+{
+  "editor.formatOnSave": true,
+  "prettier.singleQuote": true,
+  "prettier.printWidth": 160,
+  "typescript.npm": "C:\\Program Files\\nodejs",
+  "typescript.check.npmIsInstalled": false,
+  "search.exclude": {
+    "**/node_modules": true,
+    "**/bower_components": true,
+    "**/.next": true,
+    "**/out": true
+  }
+}
